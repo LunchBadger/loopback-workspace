@@ -64,7 +64,7 @@ app.use(methodOverride());
 app.use(app.get('restApiRoot'), loopback.rest());
 
 // API explorer
-require('loopback-component-explorer')(app);
+require('@lunchbadger/loopback-component-explorer')(app);
 app.once('started', function(baseUrl) {
   g.log('Browse your REST API at %s%s', baseUrl, '/explorer');
 });
